@@ -15,3 +15,22 @@
 # Force JARs to be handled as binaries
 *.jar binary
 
+
+Gitatribute
+# Ensure all text files use LF
+* text=auto
+
+# Set line endings for specific file types
+*.java text eol=lf
+*.sh   text eol=lf
+*.bat  text eol=crlf
+
+# Treat certain files as binary
+*.png binary
+*.jpg binary
+
+# Ignore changes in line endings when diffing
+*.txt diff
+
+# Mark README as documentation
+README.md linguist-documentation
